@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/complaints";
+const API_URL = "https://smart-civic-backend-e26w.onrender.com/api/complaints";
 
 const getAuthHeaders = () => {
   const token = localStorage.getItem("token");
@@ -64,7 +64,7 @@ export const deleteComplaintApi = async (id) => {
 // Admin: fetch all complaints in system
 export const getAllAdminComplaints = async () => {
   const token = localStorage.getItem("token");
-  const response = await fetch("http://localhost:5000/api/admin/complaints", {
+  const response = await fetch("https://smart-civic-backend-e26w.onrender.com/api/admin/complaints", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",

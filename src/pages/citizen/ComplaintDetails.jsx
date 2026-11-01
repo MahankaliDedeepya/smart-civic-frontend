@@ -131,7 +131,7 @@ function ComplaintDetails() {
   const imageUrl = complaint?.image
   ? /^(https?:\/\/|data:|blob:)/i.test(complaint.image)
     ? complaint.image
-    : `http://localhost:5000/${complaint.image.replace(/^\/+/, "")}`
+    : `https://smart-civic-backend-e26w.onrender.com/${complaint.image.replace(/^\/+/, "")}`
   : "";
 
   return (

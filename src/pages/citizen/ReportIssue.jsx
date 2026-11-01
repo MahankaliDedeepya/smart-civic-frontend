@@ -176,7 +176,7 @@ const triggerAiScan = async (imageSource) => {
     setScanStepText("Gemini is analyzing the photo...");
 
     const response = await fetch(
-      "http://localhost:5000/api/ai/analyze",
+      "https://smart-civic-backend-e26w.onrender.com/api/ai/analyze",
       {
         method: "POST",
         body: formData,
@@ -360,7 +360,7 @@ _Dispatched via Smart Civic Reporter_`;
 
     // Send complaint to backend
     const response = await fetch(
-      "http://localhost:5000/api/complaints",
+      "https://smart-civic-backend-e26w.onrender.com/api/complaints",
       {
         method: "POST",
 

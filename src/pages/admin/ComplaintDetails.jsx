@@ -65,7 +65,7 @@ function ComplaintDetails() {
   const imageUrl = imagePath
     ? /^(https?:\/\/|data:|blob:)/i.test(imagePath)
       ? imagePath
-      : `http://localhost:5000/${
+      : `https://smart-civic-backend-e26w.onrender.com/${
           imagePath.replace(/^\/+/, "").startsWith("uploads/")
             ? imagePath.replace(/^\/+/, "")
             : `uploads/${imagePath.replace(/^\/+/, "")}`

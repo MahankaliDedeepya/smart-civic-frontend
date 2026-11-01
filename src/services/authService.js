@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/auth";
+const API_URL = "https://smart-civic-backend-e26w.onrender.com/api/auth";
 
 // Register a new citizen
 export const registerUser = async (userData) => {
